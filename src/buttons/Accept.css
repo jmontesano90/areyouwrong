@@ -1,0 +1,38 @@
+.acceptButton {
+    margin-right: 5%;
+    margin-left: 5%;
+    text-align: start;
+    color: blue;
+    background-color: rgb(104, 9, 104);
+    width:90%;
+    height: 400px;
+    opacity: .2;
+}
+
+.beneath {
+    position: relative;
+    top: -300px;
+    font-size: 40px;
+}
+
+.beneath2 {
+    position: relative;
+    top: -250px;
+    font-size: 20px;
+   
+}
+
+.acceptButton:hover +.beneath{
+    animation: upperLeft 2s ease-out;
+}
+
+@keyframes upperLeft {
+    0%{
+        transform: translate(-100px,-100px);
+
+    }
+    100%{
+        transform: translate(0px,0px);
+
+    }
+}
