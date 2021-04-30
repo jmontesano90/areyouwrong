@@ -6,17 +6,21 @@
     margin-right: 5%;
     margin-left: 5%;
     text-align: start;
-    color: blue;
-    background-color: rgb(104, 9, 104);
+    color: black;
+    background-color: black;
     width:90%;
     height: 400px;
-    opacity: .2;
+    opacity: .4;
+    border: 1px rgb(179, 179, 0) solid;
 }
 
 .beneath {
     position: relative;
     top: -300px;
-    font-size: 40px;
+    font-size: 50px;
+    color: rgb(197, 197, 197);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
 
 .beneath2 {
@@ -26,33 +30,87 @@
    
 }
 
-.acceptButton:hover +.beneath{
-    animation: upperLeft 2s ease-out;
+.ignorance{
+    position:relative;
+    top: -55px;
+    border: 1px rgb(155, 155, 155) solid;
+    background-color:rgb(194, 251, 255);
+    color: rgb(0, 0, 0);
+    width: 30%;
+    margin-right: 35%;
+    margin-left: 35%;
+    font-size: 25px;
+    height: 90px;    
+    text-align: center;
 }
 
-
-.acceptButton:hover +.one{
-    display:inline-block;
-    color:red;
-    animation: upperLeft 2s ease-out;
+.judgement{
+    font-family: fantasy;
+    color: rgb(179, 179, 0);
 }
 
-.acceptButton:hover +.two{
-    display:inline-block;
-    color:blue;
-    animation: upperRight 2s ease-out;
+.noescape{
+    position:relative;
+    top: -146px;
+    border: 1px rgb(155, 155, 155) solid;
+    background-color:rgb(63, 0, 0);
+    color: white;
+    width: 30%;
+    margin-right: 35%;
+    margin-left: 35%;
+    font-size: 25px; 
+    height: 90px;
+    opacity: 0;
+    text-align:center;
 }
 
-.acceptButton:hover + .three {
-    display:inline-block;
-    color:green;
-    animation: bottomRight 2s ease-out; 
+.deny1{
+    margin-top: 10px;
 }
 
-.acceptButton:hover + .four {
+.noescape:hover + .ignorance{
+    animation: fadeOut 2s ease-out;
+    animation-fill-mode: forwards;
+}
+
+.noescape:hover{
+    animation: fadeIn2 2s ease-in;
+    animation-fill-mode: forwards;
+}
+
+/* .acceptButton:hover +.beneath{
+    animation: fadeIn 2s ease-out;
+} */
+
+.acceptButton:hover {
+    animation: fadeIn 4s ease-out;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+}
+
+.acceptButton:hover + .beneath{
+    animation: grow 4s ease-out;
+    animation-fill-mode: forwards;
+}
+
+.one{
     display:inline-block;
-    color:purple;
-    animation: bottomLeft 2s ease-out; 
+    animation: upperLeft 3.1s ease-out;
+}
+
+.two{
+    display:inline-block;
+    animation: upperRight 2.3s ease-out;
+}
+
+ .three {
+    display:inline-block;
+    animation: bottomRight 2.7s ease-out; 
+}
+
+.four {
+    display:inline-block;
+    animation: bottomLeft 1.9s ease-out; 
 }
 
 .zero{
@@ -61,7 +119,7 @@
 
 @keyframes upperLeft {
     0%{
-        transform: translate(-100px,-100px);
+        transform: translate(-100px,-80px);
 
     }
     100%{
@@ -72,7 +130,7 @@
 
 @keyframes upperRight {
     0%{
-        transform: translate(100px,-100px);
+        transform: translate(100px,-90px);
 
     }
     100%{
@@ -83,7 +141,7 @@
 
 @keyframes bottomRight {
     0%{
-        transform: translate(100px,100px);
+        transform: translate(100px,74px);
 
     }
     100%{
@@ -94,11 +152,48 @@
 
 @keyframes bottomLeft {
     0%{
-        transform: translate(-100px,100px);
+        transform: translate(-100px,92px);
 
     }
     100%{
         transform: translate(0px,0px);
 
+    }
+}
+
+@keyframes fadeIn {
+    0%{
+        opacity: .4;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn2 {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes grow {
+    0%{
+        transform: scale(1,1);
+    }
+    100%{
+        transform: scale(1.2,1.2);
+    }
+}
+
+@keyframes fadeOut{
+    0%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
     }
 }

@@ -8,12 +8,13 @@ class Accept extends Component {
 
         // let time = Math.random();
         // let one = document.querySelector('.one');
+        // console.log(one);
         // one.style.setProperty('--animation-time', time + 's');
         return (
             <div>
                 
                 <button className='acceptButton'> </button>
-                <div className="beneath">Accept「Judgement」</div>
+                <div className="beneath">Accept <span className='judgement'>「Judgement」</span></div>
                 <div className='beneath2'>
                     <span className="one">L</span>
                     <span className="two">e</span>
@@ -58,6 +59,16 @@ class Accept extends Component {
                 
                 
                 
+                </div>
+
+                <div className = "ignorance deny">
+                        <div className='deny1'> Deny<span className='judgement'>「Judgement」</span></div>
+                        <div className='deny2'>Remain Ignorant</div>
+                </div>
+
+                <div className = 'noescape deny'>
+                        <div >Not an Option</div>
+                        <div className='deny2'><span className='judgement'>「Judgement」</span>is absolute</div>
                 </div>
             
             
