@@ -1,81 +1,83 @@
 :root {
-    --animation-time: 2s;
+  --animation-time: 2s;
 }
 
 .acceptButton {
-    margin-right: 5%;
-    margin-left: 5%;
-    text-align: start;
-    color: black;
-    background-color: black;
-    width:90%;
-    height: 400px;
-    opacity: .4;
-    border: 1px rgb(179, 179, 0) solid;
+  margin-right: 5%;
+  margin-left: 5%;
+  text-align: start;
+  color: black;
+  background-color: black;
+  width: 90%;
+  height: 400px;
+  opacity: 0.4;
+  border: 1px rgb(179, 179, 0) solid;
 }
 
 .beneath {
-    position: relative;
-    top: -300px;
-    font-size: 50px;
-    color: rgb(197, 197, 197);
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
+  position: relative;
+  top: -300px;
+  font-size: 50px;
+  color: rgb(197, 197, 197);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
 
 .beneath2 {
-    position: relative;
-    top: -250px;
-    font-size: 20px;
-   
+  position: relative;
+  top: -250px;
+  font-size: 20px;
 }
 
-.ignorance{
-    position:relative;
-    top: -55px;
-    border: 1px rgb(155, 155, 155) solid;
-    background-color:rgb(194, 251, 255);
-    color: rgb(0, 0, 0);
-    width: 30%;
-    margin-right: 35%;
-    margin-left: 35%;
-    font-size: 25px;
-    height: 90px;    
-    text-align: center;
+.ignorance {
+  position: relative;
+  top: -55px;
+  border: 1px rgb(155, 155, 155) solid;
+  background-color: rgb(194, 251, 255);
+  color: rgb(0, 0, 0);
+  width: 30%;
+  margin-right: 35%;
+  margin-left: 35%;
+  font-size: 25px;
+  height: 90px;
+  text-align: center;
 }
 
-.judgement{
-    font-family: fantasy;
-    color: rgb(179, 179, 0);
+.judgement {
+  font-family: fantasy;
+  color: rgb(179, 179, 0);
 }
 
-.noescape{
-    position:relative;
-    top: -146px;
-    border: 1px rgb(155, 155, 155) solid;
-    background-color:rgb(63, 0, 0);
-    color: white;
-    width: 30%;
-    margin-right: 35%;
-    margin-left: 35%;
-    font-size: 25px; 
-    height: 90px;
-    opacity: 0;
-    text-align:center;
+.noescape {
+  position: relative;
+  top: -146px;
+  border: 1px rgb(155, 155, 155) solid;
+  background-color: rgb(63, 0, 0);
+  color: white;
+  width: 30%;
+  margin-right: 35%;
+  margin-left: 35%;
+  font-size: 25px;
+  height: 90px;
+  opacity: 0;
+  text-align: center;
+}
+.not {
+  margin-top: 10px;
 }
 
-.deny1{
-    margin-top: 10px;
+.deny1 {
+  margin-top: 10px;
 }
 
-.noescape:hover + .ignorance{
-    animation: fadeOut 2s ease-out;
-    animation-fill-mode: forwards;
+.noescape:hover + .ignorance {
+  animation: fadeOut 2s ease-out;
+  animation-fill-mode: forwards;
 }
 
-.noescape:hover{
-    animation: fadeIn2 2s ease-in;
-    animation-fill-mode: forwards;
+.noescape:hover {
+  animation: fadeIn2 2s ease-in;
+  animation-fill-mode: forwards;
 }
 
 /* .acceptButton:hover +.beneath{
@@ -83,117 +85,109 @@
 } */
 
 .acceptButton:hover {
-    animation: fadeIn 4s ease-out;
-    animation-fill-mode: forwards;
-    cursor: pointer;
+  animation: fadeIn 4s ease-out;
+  animation-fill-mode: forwards;
+  cursor: pointer;
 }
 
-.acceptButton:hover + .beneath{
-    animation: grow 4s ease-out;
-    animation-fill-mode: forwards;
+.acceptButton:hover + .beneath {
+  animation: grow 4s ease-out;
+  animation-fill-mode: forwards;
 }
 
-.one{
-    display:inline-block;
-    animation: upperLeft 3.1s ease-out;
+.one {
+  display: inline-block;
+  animation: upperLeft 3.1s ease-out;
 }
 
-.two{
-    display:inline-block;
-    animation: upperRight 2.3s ease-out;
+.two {
+  display: inline-block;
+  animation: upperRight 2.3s ease-out;
 }
 
- .three {
-    display:inline-block;
-    animation: bottomRight 2.7s ease-out; 
+.three {
+  display: inline-block;
+  animation: bottomRight 2.7s ease-out;
 }
 
 .four {
-    display:inline-block;
-    animation: bottomLeft 1.9s ease-out; 
+  display: inline-block;
+  animation: bottomLeft 1.9s ease-out;
 }
 
-.zero{
-    opacity: 0;
+.zero {
+  opacity: 0;
 }
 
 @keyframes upperLeft {
-    0%{
-        transform: translate(-100px,-80px);
-
-    }
-    100%{
-        transform: translate(0px,0px);
-
-    }
+  0% {
+    transform: translate(-100px, -80px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
 }
 
 @keyframes upperRight {
-    0%{
-        transform: translate(100px,-90px);
-
-    }
-    100%{
-        transform: translate(0px,0px);
-
-    }
+  0% {
+    transform: translate(100px, -90px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
 }
 
 @keyframes bottomRight {
-    0%{
-        transform: translate(100px,74px);
-
-    }
-    100%{
-        transform: translate(0px,0px);
-
-    }
+  0% {
+    transform: translate(100px, 74px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
 }
 
 @keyframes bottomLeft {
-    0%{
-        transform: translate(-100px,92px);
-
-    }
-    100%{
-        transform: translate(0px,0px);
-
-    }
+  0% {
+    transform: translate(-100px, 92px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
 }
 
 @keyframes fadeIn {
-    0%{
-        opacity: .4;
-    }
-    100%{
-        opacity: 1;
-    }
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeIn2 {
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes grow {
-    0%{
-        transform: scale(1,1);
-    }
-    100%{
-        transform: scale(1.2,1.2);
-    }
+  0% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(1.2, 1.2);
+  }
 }
 
-@keyframes fadeOut{
-    0%{
-        opacity: 1;
-    }
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
 
-    100%{
-        opacity: 0;
-    }
+  100% {
+    opacity: 0;
+  }
 }

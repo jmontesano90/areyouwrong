@@ -67,7 +67,7 @@ class Accept extends Component {
                 </div>
 
                 <div className = 'noescape deny'>
-                        <div >Not an Option</div>
+                        <div className='not'>Not an Option</div>
                         <div className='deny2'><span className='judgement'>「Judgement」</span>is absolute</div>
                 </div>
             
